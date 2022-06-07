@@ -37,7 +37,7 @@ The `go get` command visits each proxy in the list sequentially until it receive
 ### GoProxy Environment Variable Options
 The default configuration for  the `GOPROXY` environment variable is `GOPROXY=proxy.golang.org,direct` which effectively tells the `go get` command to first attempt module retrieval using the module mirror and if that approach is unsuccessful, fallback to the approach of connecting directly to the module origin repository. A number of other environment variables can also impact how `go get` will attempt to resolve dependencies. These variables are listed [here](#go-environment-variables-which-impact-module-retrieval).
 
-| `GPROXY` keywords | Description |
+| `GOPROXY` keywords | Description |
 |-------|------------------| 
 | direct | `go get` will download directly from version control repo | 
 | off | Disallows downloading from any source |
